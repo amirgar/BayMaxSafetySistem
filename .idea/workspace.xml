@@ -5,15 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d6c6ae79-c6bb-4cfe-9b91-225d42e79a12" name="Changes" comment="ss">
+      <change afterPath="$PROJECT_DIR$/ai/MTCNN_Detector.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai/check_warnings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai/get_photo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai/get_photos.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai/register_face.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ai/verify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/face_emotion_recognition-main/_models" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -28,23 +43,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.MTCNN_Detector.executor&quot;: &quot;Run&quot;,
+    &quot;Python.check_warnings.executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_photo.executor&quot;: &quot;Run&quot;,
+    &quot;Python.get_photos.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;Python.three_photos.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Airat\PycharmProjects\BayMax_Bank\ai\photo" />
+      <recent name="C:\Users\Airat\PycharmProjects\BayMax_Bank\ai\photo2" />
+      <recent name="C:\Users\Airat\PycharmProjects\BayMax_Bank\ai" />
       <recent name="C:\Users\Airat\PycharmProjects\BayMax_Bank" />
+      <recent name="C:\Users\Airat\PycharmProjects\BayMax_Bank\data" />
     </key>
   </component>
   <component name="RunManager">
@@ -88,7 +112,17 @@
       <option name="presentableId" value="Default" />
       <updated>1714070743215</updated>
       <workItem from="1714070745415" duration="81000" />
-      <workItem from="1714070863605" duration="4271000" />
+      <workItem from="1714070863605" duration="4433000" />
+      <workItem from="1714075439069" duration="609000" />
+      <workItem from="1714132847779" duration="2856000" />
+      <workItem from="1714135846955" duration="804000" />
+      <workItem from="1714137529272" duration="10486000" />
+      <workItem from="1714159005278" duration="2856000" />
+      <workItem from="1714235206606" duration="2600000" />
+      <workItem from="1714279703883" duration="592000" />
+      <workItem from="1714300399510" duration="613000" />
+      <workItem from="1714301987283" duration="2248000" />
+      <workItem from="1714304594190" duration="1531000" />
     </task>
     <task id="LOCAL-00001" summary="ss">
       <option name="closed" value="true" />
@@ -98,7 +132,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714074809190</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ss">
+      <option name="closed" value="true" />
+      <created>1714075300019</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1714075300019</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -120,6 +162,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="ss" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/BayMax_Bank$main.coverage" NAME="main Coverage Results" MODIFIED="1714073650362" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BayMax_Bank$get_photo.coverage" NAME="get_photo Coverage Results" MODIFIED="1714159676107" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ai" />
+    <SUITE FILE_PATH="coverage/BayMax_Bank$MTCNN_Detector.coverage" NAME="MTCNN_Detector Coverage Results" MODIFIED="1714325179765" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ai" />
+    <SUITE FILE_PATH="coverage/BayMax_Bank$main.coverage" NAME="main Coverage Results" MODIFIED="1714304645537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/BayMax_Bank$three_photos.coverage" NAME="three_photos Coverage Results" MODIFIED="1714160303589" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ai" />
+    <SUITE FILE_PATH="coverage/BayMax_Bank$check_warnings.coverage" NAME="check_warnings Coverage Results" MODIFIED="1714159187282" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ai" />
+    <SUITE FILE_PATH="coverage/BayMax_Bank$get_photos.coverage" NAME="get_photos Coverage Results" MODIFIED="1714160992018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ai" />
   </component>
 </project>
