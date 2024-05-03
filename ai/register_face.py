@@ -4,7 +4,7 @@ import cv2
 import os
 
 
-def check_registration(path='photo/', check_name='photo') -> bool:
+def check_registration(path=r'C:\Users\Airat\PycharmProjects\BayMax_Bank\ai\photo', check_name='GAREEV AMIR') -> bool:
     images = []
     classNames = []
     myList = os.listdir(path)
@@ -15,8 +15,12 @@ def check_registration(path='photo/', check_name='photo') -> bool:
     encodeList = []
     for img in images:
         img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
-        encode = face_recognition.face_encodings(img)[0]
-        encodeList.append(encode)
+        try:
+            encode = face_recognition.face_encodings(img)[0]
+            encodeList.append(encode)
+        except IndexError:  # Лицо не распознано
+            continue
+
     encodeListKnown = encodeList
     cap = cv2.VideoCapture(0)
     while True:
@@ -35,10 +39,11 @@ def check_registration(path='photo/', check_name='photo') -> bool:
 
             if matches[matchIndex]:
                 name = classNames[matchIndex]
+                print(name)
                 if check_name == name:
                     return True
 
 
 if __name__ == "__main__":
-    if check_registration(check_name='photo'):
+    if check_registration(check_name='GAREEV AMIR'):
         print("Вход в аккаунт произошел успешно")
