@@ -1,9 +1,10 @@
 from ai.get_photo import get_photo
-from PyQt5 import QtCore, QtGui, QtWidgets
 from ai.register_face import check_registration
+from ai.check_warnings import check_warnings
 from app.start_app import StartApp, run_startApp
+from app.user_cabinet_app import UserCabinet, run_userCabinet
 import sqlite3
-import sys
+
 
 def test_register():
     type = input("Если вы хотите зарегистрироваться введите Sign Up, иначе Sign In: ")
@@ -22,5 +23,16 @@ def test_register():
 
 
 if __name__ == '__main__':
-    run_startApp()
-    print('Вход в аккаунт выполнен успешно✅✅✅')
+    check_warnings()
+    surname = run_startApp()
+    if surname:
+        print('Вход в аккаунт выполнен успешно✅✅✅')
+        connection = sqlite3.connect('users.db')
+        cursor = connection.cursor()
+        result = cursor.execute("SELECT * FROM Users WHERE surname=?", (surname,)).fetchall()[0]
+        # result -> name, surname, card, cvv, date
+        connection.close()
+        # print(result)
+        run_userCabinet(result)
+    else:
+        print('Не удалось войти в аккаунт. Попробуйте войти снова❎❎❎')

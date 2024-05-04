@@ -5,6 +5,7 @@ from ai.register_face import check_registration
 import sqlite3
 import sys
 
+surname_user = ""
 
 class StartApp(object):
     def add_user(self):
@@ -37,9 +38,9 @@ class StartApp(object):
         else:
             print('OK')
             if check_registration(check_name=f'{self.surname} {self.name}'):
-                global MainWindow
+                global surname_user
+                surname_user = self.surname
                 self.sign_in_info.setText('Вход в аккаунт произошел успешно. Закройте приложение')
-                MainWindow.close()
 
 
     def setupUi(self, MainWindow):
@@ -55,7 +56,7 @@ class StartApp(object):
         self.label = QtWidgets.QLabel(self.StartPage)
         self.label.setGeometry(QtCore.QRect(340, 60, 101, 101))
         self.label.setText("")
-        self.label.setPixmap(QtGui.QPixmap("../logo.png"))
+        self.label.setPixmap(QtGui.QPixmap("logo.png"))
         self.label.setObjectName("label")
         self.version = QtWidgets.QLabel(self.StartPage)
         self.version.setGeometry(QtCore.QRect(580, 500, 231, 71))
@@ -100,7 +101,7 @@ class StartApp(object):
         self.logo2 = QtWidgets.QLabel(self.tab)
         self.logo2.setGeometry(QtCore.QRect(340, 10, 101, 101))
         self.logo2.setText("")
-        self.logo2.setPixmap(QtGui.QPixmap("../logo.png"))
+        self.logo2.setPixmap(QtGui.QPixmap("logo.png"))
         self.logo2.setObjectName("logo2")
         self.sign_in_text = QtWidgets.QLabel(self.tab)
         self.sign_in_text.setGeometry(QtCore.QRect(230, 260, 321, 21))
@@ -131,7 +132,7 @@ class StartApp(object):
         self.logo3 = QtWidgets.QLabel(self.tab_2)
         self.logo3.setGeometry(QtCore.QRect(330, 30, 101, 101))
         self.logo3.setText("")
-        self.logo3.setPixmap(QtGui.QPixmap("../logo.png"))
+        self.logo3.setPixmap(QtGui.QPixmap("logo.png"))
         self.logo3.setObjectName("logo3")
         self.label_11 = QtWidgets.QLabel(self.tab_2)
         self.label_11.setGeometry(QtCore.QRect(20, 180, 191, 31))
@@ -209,17 +210,14 @@ class StartApp(object):
         self.tabs.setTabText(self.tabs.indexOf(self.tab_2), _translate("MainWindow", "Registration"))
 
 
-def run_startApp() -> bool:
-    try:
-        app = QtWidgets.QApplication(sys.argv)
-        MainWindow = QtWidgets.QMainWindow()
-        ui = StartApp()
-        ui.setupUi(MainWindow)
-        MainWindow.show()
-        sys.exit(app.exec_())
-        return True
-    except Exception:
-        return False
+def run_startApp() -> str:
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = StartApp()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    app.exec_()
+    return surname_user
 
 
 if __name__ == "__main__":
@@ -228,6 +226,5 @@ if __name__ == "__main__":
     ui = StartApp()
     ui.setupUi(MainWindow)
     MainWindow.show()
-    print('OK1')
-    MainWindow.close()
-    print('OK2')
+    app.exec_()
+    print('Вход в аккаунт выполнен успешно✅✅✅')

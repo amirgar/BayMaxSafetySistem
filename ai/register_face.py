@@ -39,7 +39,6 @@ def check_registration(path=r'C:\Users\Airat\PycharmProjects\BayMax_Bank\ai\phot
 
             if matches[matchIndex]:
                 name = classNames[matchIndex]
-                print(name)
                 if check_name == name:
                     return True
 

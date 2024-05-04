@@ -1,7 +1,7 @@
 from cv2 import VideoCapture, imshow, imwrite
 
 
-def get_photo(path=r'C:\Users\Airat\PycharmProjects\BayMax_Bank\ai\photo', name='photo', show=False) -> bool:
+def get_photo(path=r'C:\Users\Airat\PycharmProjects\BayMax_Bank\ai\photos', name='photo', show=False) -> bool:
     cam = VideoCapture(0)
     result, image = cam.read()
     if result:
