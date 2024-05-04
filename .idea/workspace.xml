@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6c6ae79-c6bb-4cfe-9b91-225d42e79a12" name="Changes" comment="Добавление входа и регистрации по биометрии лица, в том числе самого приложения (PyQt5)">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai/check_warnings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai/check_warnings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai/get_photo.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai/get_photo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai/get_photos.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai/get_photos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ai/register_face.py" beforeDir="false" afterPath="$PROJECT_DIR$/ai/register_face.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/start_app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/start_app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-    </list>
+    <list default="true" id="d6c6ae79-c6bb-4cfe-9b91-225d42e79a12" name="Changes" comment="Добавление функции определения потенциального опасного пользователя" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -225,7 +217,7 @@
       <workItem from="1714587217117" duration="2087000" />
       <workItem from="1714627859256" duration="22427000" />
       <workItem from="1714815983142" duration="5869000" />
-      <workItem from="1714842238330" duration="2424000" />
+      <workItem from="1714842238330" duration="2796000" />
     </task>
     <task id="LOCAL-00001" summary="ss">
       <option name="closed" value="true" />
@@ -259,7 +251,15 @@
       <option name="project" value="LOCAL" />
       <updated>1714755676671</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Добавление функции определения потенциального опасного пользователя">
+      <option name="closed" value="true" />
+      <created>1714845051620</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1714845051620</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +280,8 @@
     <MESSAGE value="ss" />
     <MESSAGE value="Добавление искусственного интеллекта для определения пользователя банкомата" />
     <MESSAGE value="Добавление входа и регистрации по биометрии лица, в том числе самого приложения (PyQt5)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавление входа и регистрации по биометрии лица, в том числе самого приложения (PyQt5)" />
+    <MESSAGE value="Добавление функции определения потенциального опасного пользователя" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавление функции определения потенциального опасного пользователя" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/BayMax_Bank$register_face.coverage" NAME="register_face Coverage Results" MODIFIED="1714750917721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ai" />
