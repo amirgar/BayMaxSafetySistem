@@ -25,7 +25,7 @@
 ![вв](https://github.com/amirgar/BayMaxSafetySistem/assets/81811152/c9fd6069-77d2-461d-ad10-2a9ffb356bb4)
 
 **Видео демонстрация работы приложения**
-Ссылка на Google Диск: ![](https://drive.google.com/file/d/1se_vj4-0hR_YknHW1DipvOY1Z1nyFdAZ/view?usp=sharing)
+![Ссылка на Google Диск](https://drive.google.com/file/d/1se_vj4-0hR_YknHW1DipvOY1Z1nyFdAZ/view?usp=sharing)
 
 **Планы** 
 Планируется дальше развиваться в плане создания макета банкомата. Также планируется поработать с конфедециальностью пользователей, так как в данном проекте используются не только данные карточек, но и биометрия человека
