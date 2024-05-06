@@ -26,15 +26,17 @@ def test_register():
 if __name__ == '__main__':
     check_warnings()
     print('Модель успешно загружена✅✅✅')
-    surname = run_startApp()
-    if surname:
-        print('Вход в аккаунт выполнен успешно✅✅✅')
-        connection = sqlite3.connect('users.db')
-        cursor = connection.cursor()
-        result = cursor.execute("SELECT * FROM Users WHERE surname=?", (surname,)).fetchall()[0]
-        # result -> name, surname, card, cvv, date
-        connection.close()
-        # print(result)
-        run_userCabinet(result)
-    else:
-        print('Не удалось войти в аккаунт. Попробуйте войти снова❎❎❎')
+    while True:
+        surname = run_startApp()
+        if surname:
+            print('Вход в аккаунт выполнен успешно✅✅✅')
+            connection = sqlite3.connect('users.db')
+            cursor = connection.cursor()
+            result = cursor.execute("SELECT * FROM Users WHERE surname=?", (surname,)).fetchall()[0]
+            # result -> name, surname, card, cvv, date
+            connection.close()
+            # print(result)
+            run_userCabinet(result)
+        else:
+            print('Не удалось войти в аккаунт. Попробуйте войти снова❎❎❎')
+            break

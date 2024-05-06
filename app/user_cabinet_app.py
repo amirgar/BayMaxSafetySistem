@@ -4,6 +4,7 @@ from ai.get_photo import get_photo
 from ai.get_photos import get_photos
 from ai.check_warnings import check_warnings
 from app.warning_app import WarningApp
+from playsound import playsound
 import sys
 
 name = ""
@@ -63,6 +64,7 @@ class UserCabinet(object):
             print('WARNING‼‼‼')
             self.open_warning()
         else:
+            playsound(r'C:\Users\Airat\PycharmProjects\BayMax_Bank\sound_well_done.mp3')
             # Working arduino
             print('all ok')
 
