@@ -3,6 +3,7 @@ from ai.register_face import check_registration
 from ai.check_warnings import check_warnings
 from app.start_app import StartApp, run_startApp
 from app.user_cabinet_app import UserCabinet, run_userCabinet
+from bot.messenger_client import run_server
 import sqlite3
 
 
@@ -24,6 +25,7 @@ def test_register():
 
 if __name__ == '__main__':
     check_warnings()
+    print('Модель успешно загружена✅✅✅')
     surname = run_startApp()
     if surname:
         print('Вход в аккаунт выполнен успешно✅✅✅')

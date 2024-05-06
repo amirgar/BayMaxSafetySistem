@@ -20,7 +20,7 @@ class StartApp(object):
         connection.commit()
         connection.close()
         try:
-            get_photo(name=f'{self.surname_user} {self.name_user}')
+            get_photo(name=f'{self.surname_user} {self.name_user}', path=r'C:\Users\Airat\PycharmProjects\BayMax_Bank\ai\photo')
             self.registartion_info.setText('Регистрация прошла успешно')
         except:
             self.registartion_info.setText('Попробуйте заново, возникла ошибка...')
