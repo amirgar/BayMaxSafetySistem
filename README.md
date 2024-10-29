@@ -23,8 +23,7 @@ pip install -r requirements.txt
 
 **Что есть в телеграмм боте?** 
 Телеграмм бот предназначен для того, чтобы админу получать информацию о пользователе банкомата. Использовав необходимые команды, можно получить фотографии человека, информацию о его банковской карте и тп. 
-![ыы](https://github.com/amirgar/BayMaxSafetySistem/assets/81811152/fb4079d0-0f1e-4193-b8da-e0623d737dc1)
-![вв](https://github.com/amirgar/BayMaxSafetySistem/assets/81811152/c9fd6069-77d2-461d-ad10-2a9ffb356bb4)
+![Фото скриншота из телеграм бота](https://github.com/amirgar/BayMaxSafetySistem/assets/81811152/c9fd6069-77d2-461d-ad10-2a9ffb356bb4)
 
 **Видео демонстрация работы приложения**
 Ссылка на Google Диск - https://drive.google.com/file/d/1se_vj4-0hR_YknHW1DipvOY1Z1nyFdAZ/view?usp=sharing
