@@ -18,7 +18,7 @@ So, let's talk about Python modules, that were used in this project.
 6) PyWebIo was used for creating a chat of user with administrator
 7) Aiogram was used for creating a Telegram Bot
 ##### 3. Realisation
-![Scheme of project (on Russian)](project_scheme.png "Scheme of project (on Russian)") 
+![Scheme of project (on Russian)](project_scheme.PNG "Scheme of project (on Russian)") 
 ##### 4. Creating virtual enviroment (venv), installing libraries and modules 
 Run this command to create virtual enviroment in your cmd: 
 ```
