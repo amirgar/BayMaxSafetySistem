@@ -3,7 +3,7 @@ Run this command to clone this repository:
 git clone https://github.com/amirgar/BayMaxSafetySistem.git
 ```
 ##### 1. Introduction
-By the [statics from RBK](https://www.rbc.ru/life/news/67c701169a79471c14b76fa5) (on of the most influential media in the Russia), in 2024, scammers stole more 295 billion rubles by the internet. This number is equal with budget of my native republic (Russia, Tatarstan).
+By the [statics from RBK](https://www.rbc.ru/life/news/67c701169a79471c14b76fa5) (on of the most influential media in the Russia), in 2024, scammers stole more than 295 billion rubles by the internet. This number is equal with budget of my native republic (Russia, Tatarstan).
 I think, that you usually hear on TV news about problem of internet scammers. Unfortunatelly, this problem can affect all of us, so I think, nowadays this problem potentionaly is on of the most important.
 
 I know, that it is absurdly to solve this problem by the harassmenting them in internet, because they can hide themself by powerful encryption technologies. However, I assumbed, that banks can prevent part of those transctions by ATM machines. We can implement AI technologies in ATM machine, and if behavior of user is strange, ATM machine and AI will block this transaction. Of course, uhis solution of problem can't solve all problem with internet scammers, but it can solve some parts of this issue.  
