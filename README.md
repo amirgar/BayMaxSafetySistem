@@ -17,7 +17,9 @@ So, let's talk about Python modules, that were used in this project.
 5) OpenCV was used for communication of code with camera
 6) PyWebIo was used for creating a chat of user with administrator
 7) Aiogram was used for creating a Telegram Bot
-##### 3. Creating virtual enviroment (venv), installing libraries and modules 
+##### 3. Realisation
+![Scheme of project (on Russian)](project_scheme.png "Scheme of project (on Russian)") 
+##### 4. Creating virtual enviroment (venv), installing libraries and modules 
 Run this command to create virtual enviroment in your cmd: 
 ```
 python3 -m venv venv
