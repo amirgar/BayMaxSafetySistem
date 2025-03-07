@@ -1,31 +1,59 @@
-**Причина создания данного проекта.** 
-Большинство преступлений, связанных с переводом денег на карты мошенников, происходят через банкоматы. Люди (особенно пожилые люди), слишком сильно доверяют мошенникам, что приводит к необратимым последствиям для жертвы. Такой человек может, к примеру, 
-может всю жизнь откладывать в сумме около 3 миллионов на пенсию, и лишится их в один миг, послушав незнакомца и переведя деньги на незнакомый номер. Да, данная технология в банкоматах все равно не сможет предотвратить абсолютно все преступления мошенников, 
-но точно может предотвратить какой-то определенный процент преступлений. 
+Run this command to clone this repository: 
+```
+git clone https://github.com/amirgar/BayMaxSafetySistem.git
+```
+##### 1. Introduction
+By the [statics from RBK](https://www.rbc.ru/life/news/67c701169a79471c14b76fa5) (one of the most influential media in the Russia), in 2024, scammers stole more than 295 billion rubles by the internet. This number is equal with budget of my native republic (Russia, Tatarstan).
+I think, that you usually hear on TV news about problem of internet scammers. Unfortunatelly, this problem can affect all of us, so I think, nowadays this problem potentionaly is on of the most important.
 
-**Как будет все работать?** 
-1. Человек проходит регистрацию/вход в аккаунт
-2. При успешном входе в аккаунт он выбирает тип операции
-3. В момент когда он вводит данные, камера три раза фоткает его
-4. Далее после отправки запроса о получении денег/кредита и тп. ИИ обрабатывает все фотографии, определяет настроение поьзователя и его возраст
-5. Если система посяитает, что человек находится в состоянии испуга/злости или его возраст больше 55 лет, то тогда она выведет сообщение оповещение о возможной угрозе
-6. Если человек согласиться перейти по сообщению, то ему откроется сайт-мессенджер с админом, где админ может, если будет необходимо, решить все проблемы связанные с различными финансовыми махинациями.
-7. В конце либо операция отменяется, либо либо издается звук об успешной оплате и выполняется небольшая работа Arduino(для демонстрации макета, доказательство того что вске работает)
-Также у админа есть собственный интерфейс - это мессенджер (на данный момент его можно запускать только локально), и телеграмм бот - @baymax_safety_system_bot. Его функционал будет описан ниже
-
-**Используемые технологии** 
-Для работы с Arduino использовался язык программирования C++. В остальном, был задействован Python. Для создания интерфейсов приложений использовалась библиотека PyQt5, 
-для регистрации данных ользователя в базе данных - SQLite3, для определения лица (Face ID) - face_recognition, для определения эмоций человека - DeepFace, для получения фотографий с камеры - OpenCV, 
-для создания чата с админом - pywebio, для создания админского тг бота - aiogram. Также было взаимодействовано много менее важных библиотек, на которых я останавливаться не буду. Полный список 
-можно найти в файле requiremets.txt 
-
-**Что есть в телеграмм боте?** 
-Телеграмм бот предназначен для того, чтобы админу получать информацию о пользователе банкомата. Использовав необходимые команды, можно олучить фотографии человека, информацию о его банковской карте и тп. 
-![ыы](https://github.com/amirgar/BayMaxSafetySistem/assets/81811152/fb4079d0-0f1e-4193-b8da-e0623d737dc1)
-![вв](https://github.com/amirgar/BayMaxSafetySistem/assets/81811152/c9fd6069-77d2-461d-ad10-2a9ffb356bb4)
-
-**Видео демонстрация работы приложения**
-Ссылка на Google Диск - https://drive.google.com/file/d/1se_vj4-0hR_YknHW1DipvOY1Z1nyFdAZ/view?usp=sharing
-
-**Планы** 
-Планируется дальше развиваться в плане создания макета банкомата. Также планируется поработать с конфедециальностью пользователей, так как в данном проекте используются не только данные карточек, но и биометрия человека
+I know, that it is absurdly to solve this problem by the harassmenting them in internet, because they can hide themself by powerful encryption technologies. However, I assumbed, that banks can prevent part of those transctions by ATM machines. We can implement AI technologies in ATM machine, and if behavior of user is strange, ATM machine and AI will block this transaction. Of course, this solution of problem can't solve all problem with internet scammers, but it can solve some parts of this issue.  
+##### 2. Used technologies
+When i has created this project, I were using two programming languages: Python and C++. C++ was used for Arduino, Python was used for GUI and AI. 
+So, let's talk about Python modules, that were used in this project. 
+1) PyQT5 was used for GUI
+2) SQLite3 was used for saving user data in database
+3) FaceRecognition was used for detecting user's face
+4) DeepFace was used for detecting user's emotions
+5) OpenCV was used for communication of code with camera
+6) PyWebIo was used for creating a chat of user with administrator
+7) Aiogram was used for creating a Telegram Bot
+##### 3. Realisation 
+Okey, now i show you scheme of work of AI for ATM project (scheme is on Russian)
+![Scheme of project (on Russian)](project_scheme.PNG "Scheme of project (on Russian)")
+So, you can find files with AI in this directory: 
+```
+cd ai
+```
+You can find files with Telegram bot functions in this dirctory: 
+```
+cd bot
+```
+You can find files with app realisation in this directory: 
+```
+cd app 
+```
+##### 4. Creating virtual enviroment (venv), installing libraries and modules 
+Run this command to create virtual enviroment in your cmd: 
+```
+python3 -m venv venv
+```
+Then run this command to activate venv: 
+```
+venv\Scripts\activate
+```
+Run this command to install libraries from ***requirements.txt***:
+```
+pip install -r requiremenets.txt
+```
+##### 5. Recomendation for running project
+For succesful running for project I recomend you after install:
+1. Run ```messenger_client.py```
+2. Run ```bot.py```
+3. Run ```main.py```
+If you follow the order, your project will run succesful
+##### 6. Future of project 
+I am going to: 
+1. Upgrade databases, make them more safety. I think, that i will use PostgreSQL technologies for this
+2. Inject this software in real cases ATM machines
+##### 7. Contacts 
+If you want to discuss with me about realisation of this project, you can write me on Telegram: @gareeeev😎
