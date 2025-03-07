@@ -18,7 +18,8 @@ So, let's talk about Python modules, that were used in this project.
 6) PyWebIo was used for creating a chat of user with administrator
 7) Aiogram was used for creating a Telegram Bot
 ##### 3. Realisation 
-Okey, now i show you scheme of work of AI for ATM project (scheme is on Russian)
+Okey, now i show you scheme of work of AI for ATM project
+(scheme is on Russian)
 ![Scheme of project (on Russian)](project_scheme.PNG "Scheme of project (on Russian)")
 So, you can find files with AI in this directory: 
 ```
@@ -45,15 +46,18 @@ Run this command to install libraries from ***requirements.txt***:
 ```
 pip install -r requiremenets.txt
 ```
-##### 5. Recomendation for running project
-For succesful running for project I recomend you after install:
+##### 5. Recommendation for running project
+For succesful running for project I recommend you after install:
 1. Run ```messenger_client.py```
 2. Run ```bot.py```
 3. Run ```main.py```
 If you follow the order, your project will run succesful
-##### 6. Future of project 
+##### 6. Potential problems when you run this project
+I were facing with CMake problem while I have developed this project. If you have problem in cmd, like "CMake is not install
+on your system!" I will recommend you install [Cmake from their official cite](https://cmake.org/). This solution solved my problem 
+##### 7. Future of project 
 I am going to: 
 1. Upgrade databases, make them more safety. I think, that i will use PostgreSQL technologies for this
 2. Inject this software in real cases ATM machines
-##### 7. Contacts 
+##### 8. Contacts 
 If you want to discuss with me about realisation of this project, you can write me on Telegram: @gareeeev😎
