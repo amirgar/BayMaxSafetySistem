@@ -1,7 +1,0 @@
-User: AMIR GAREEV
-Card number: 220220628*******
-CVV: 3**
-Date: 02/**
-Counter of fear emotion: 0
-Counter of angry emotion: 0
-Counter of old factor: 0
