@@ -45,15 +45,15 @@ Run this command to install libraries from ***requirements.txt***:
 ```
 pip install -r requiremenets.txt
 ```
-##### 6. Recomendation for running project
+##### 5. Recomendation for running project
 For succesful running for project I recomend you after install:
 1. Run ```messenger_client.py```
 2. Run ```bot.py```
 3. Run ```main.py```
 If you follow the order, your project will run succesful
-##### 5. Future of project 
+##### 6. Future of project 
 I am going to: 
 1. Upgrade databases, make them more safety. I think, that i will use PostgreSQL technologies for this
 2. Inject this software in real cases ATM machines
-##### 6. Contacts 
+##### 7. Contacts 
 If you want to discuss with me about realisation of this project, you can write me on Telegram: @gareeeev😎
