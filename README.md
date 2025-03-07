@@ -8,7 +8,7 @@ I think, that you usually hear on TV news about problem of internet scammers. Un
 
 I know, that it is absurdly to solve this problem by the harassmenting them in internet, because they can hide themself by powerful encryption technologies. However, I assumbed, that banks can prevent part of those transctions by ATM machines. We can implement AI technologies in ATM machine, and if behavior of user is strange, ATM machine and AI will block this transaction. Of course, this solution of problem can't solve all problem with internet scammers, but it can solve some parts of this issue.  
 ##### 2. Used technologies
-When i has created this project, I were using two programming languages: Python and C++. C++ was used for Arduino, Python was used for GUI and AI. 
+When i have created this project, I were using two programming languages: Python and C++. C++ was used for Arduino, Python was used for GUI and AI. 
 So, let's talk about Python modules, that were used in this project. 
 1) PyQT5 was used for GUI
 2) SQLite3 was used for saving user data in database
