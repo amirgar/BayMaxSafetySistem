@@ -1,10 +1,12 @@
-from config import TOKEN
-import aiogram
+import asyncio
 import logging
+
+import aiogram
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters.command import Command
 from aiogram.types import InputFile
-import asyncio
+
+from config import TOKEN
 
 logging.basicConfig(level=logging.INFO)
 bot = Bot(token=TOKEN)

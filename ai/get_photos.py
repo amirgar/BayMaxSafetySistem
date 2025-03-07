@@ -11,7 +11,7 @@ timer - интервал
 """
 
 
-def get_photos(path=r'C:\Users\Airat\PycharmProjects\BayMax_Bank\ai\photos', name='photo', counter=5, timer=1.5) -> bool:
+def get_photos(path=r'C:\Users\Airat\PycharmProjects\BayMax_Bank\ai\photos', name='photo', counter=5, timer=0.5) -> bool:
     try:
         for i in range(1, counter + 1):
             get_photo(path, f'{name}{i}')

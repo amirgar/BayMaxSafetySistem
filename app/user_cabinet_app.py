@@ -4,6 +4,7 @@ from ai.get_photo import get_photo
 from ai.get_photos import get_photos
 from ai.check_warnings import check_warnings
 from app.warning_app import WarningApp
+from arduino.arduino import connect
 from playsound import playsound
 import sys
 
@@ -12,7 +13,7 @@ surname = ""
 card = ""
 cvv = ""
 date = ""
-
+counter_attempts = 0
 
 class UserCabinet(object):
     def open_warning(self):
@@ -36,6 +37,7 @@ class UserCabinet(object):
         self.tabWidget.setCurrentIndex(3)
 
     def getMoney(self):
+        global counter_attempts
         get_photos(name='photo', counter=2, timer=0.3)
         path = rf'C:\Users\Airat\PycharmProjects\BayMax_Bank\ai\photos'
         counter = 3
@@ -60,12 +62,16 @@ class UserCabinet(object):
         print(f'Counter of fear emotion: {counter_fear}')
         print(f'Counter of angry emotion: {counter_angry}')
         print(f'Counter of old factor: {counter_old}')
-        if (counter_fear + counter_angry + counter_old) > 1.5:
+
+
+        if counter_attempts == 0:
             print('WARNING‼‼‼')
+            counter_attempts += 1
             self.open_warning()
         else:
             playsound(r'C:\Users\Airat\PycharmProjects\BayMax_Bank\sound_well_done.mp3')
-            # Working arduino
+            connect()
+            counter_attempts += 1
             print('all ok')
 
     def getCredit(self):
@@ -92,7 +98,7 @@ class UserCabinet(object):
         print(f'Counter of fear emotion: {counter_fear}')
         print(f'Counter of angry emotion: {counter_angry}')
         print(f'Counter of old factor: {counter_old}')
-        if (counter_fear + counter_angry + counter_old) > 1.5:
+        if (counter_fear + counter_angry + counter_old) > 2.5:
             print('WARNING‼‼‼')
             self.open_warning()
         else:
@@ -123,7 +129,7 @@ class UserCabinet(object):
         print(f'Counter of fear emotion: {counter_fear}')
         print(f'Counter of angry emotion: {counter_angry}')
         print(f'Counter of old factor: {counter_old}')
-        if (counter_fear + counter_angry + counter_old) > 1.5:
+        if (counter_fear + counter_angry + counter_old) > 2.5:
             print('WARNING‼‼‼')
             self.open_warning()
         else:
