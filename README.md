@@ -51,6 +51,7 @@ For succesful running for project I recommend you after install:
 1. Run ```messenger_client.py```
 2. Run ```bot.py```
 3. Run ```main.py```
+
 If you follow the order, your project will run succesful
 ##### 6. Potential problems when you run this project
 I were facing with CMake problem while I have developed this project. If you have problem in cmd, like "CMake is not install
