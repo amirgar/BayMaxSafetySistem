@@ -44,7 +44,7 @@ venv\Scripts\activate
 ```
 Run this command to install libraries from ***requirements.txt***:
 ```
-pip install -r requiremenets.txt
+pip install -r requiremenets/prod.txt
 ```
 ##### 5. Recommendation for running project
 For succesful running for project I recommend you after install:
